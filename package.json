@@ -1,0 +1,27 @@
+{
+  "name": "falconjs.io-component-flexgrid",
+  "version": "1.0.0",
+  "description": "Flex Grid Layout Component FalconJS.io Framework",
+  "main": "./src/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html --port=8000 --open",
+    "build": "parcel ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Flex, grid, layout, falconjs.io"
+  ],
+  "author": "John Martin R. Disuanco",
+  "license": "MIT",
+  "dependencies": {
+    "@falconjs.io/falcon": "^0.6.0",
+    "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "node-sass": "^4.11.0"
+  }
+}
