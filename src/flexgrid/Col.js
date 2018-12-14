@@ -2,7 +2,7 @@ import {h} from '@falconjs.io/falcon'
 import s from './style/index.scss';
 
 let  Col = ({ span, offset, children, prefix = 'flcn-grid-col', order, ...others }) => {
-  
+  console.log(offset)
   let classes=''
   let sizes = ['xs', 'sm', 'md', 'lg', 'xl']
   sizes.map( (size)=>{
@@ -18,8 +18,12 @@ let  Col = ({ span, offset, children, prefix = 'flcn-grid-col', order, ...others
         sizeParams.offset || sizeParams.offset === 0 ? classes += `${prefix}-${size}-offset-${sizeParams.offset} ` : null
         sizeParams.order || sizeParams.order === 0? classes += `${prefix}-${size}-order-${sizeParams.order}` : null
       }
+
   })
-  return <div class={classes} {...others}>{children}</div>
+      span ?  classes += `${prefix}-${span} ` : null
+      offset ?  classes += `${prefix}-offset-${offset} ` : null
+      order ?  classes += `${prefix}-order-${order} ` : null
+  return <div {...others} class={classes}  >{children}</div>
 }
 
 Col.defaultProps = {

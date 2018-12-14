@@ -37,12 +37,12 @@ const view = state =>{
       <div style={{ marginBottom: 16 }}>
       <span style={{ marginRight: 6 }}>Gutter (px): </span>
       <div style={{ width: '50%' }}>
-      <input type="range" id="gutter" onchange={onGutterChange} name="gutter" min="0" max="50"/>
+      <input type="range" id="gutter" oninput={onGutterChange} name="gutter" min="0" max="50"/>
         <input value={state.gutterPx} oninput={onGutterChange} />
       </div>
       <span style={{ marginRight: 6 }}>Column Count:</span>
       <div style={{ width: '50%' }}>
-      <input type="range" id="col" onchange={onColCountChange} name="col" min="3" max="12" step ="3"/>
+      <input type="range" id="col" oninput={onColCountChange} name="col" min="3" max="12" step ="3"/>
         <input value={state.colCount} oninput={onColCountChange} />
       </div>
       </div>
@@ -59,7 +59,12 @@ const view = state =>{
         <Col md={{span:3, order:3}}>Column 3</Col>
         <Col md={{span:3, order:4}}>Column 4</Col>
       </Row>
-
+      <Row gutter={80}>
+        <Col span={3} order={4}>4 col-4</Col>
+        <Col span={3} order={3}>3 col-4</Col>
+        <Col span={3} order={2}>2 col-4</Col>
+        <Col span={3} order={1}>1 col-4</Col>
+      </Row>
       </div>
       <div>
       <Row gutter={state.gutterPx}>{state.Cols}</Row>
