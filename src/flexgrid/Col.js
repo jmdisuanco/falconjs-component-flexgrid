@@ -3,7 +3,9 @@ import s from './style/index.scss';
 
 let  Col = ({ span, offset, children, prefix = 'flcn-grid-col', order, ...others }) => {
   console.log(offset)
+  console.log(others['class'])
   let classes=''
+  others['class'] ? classes = others['class']+' ' : null
   let sizes = ['xs', 'sm', 'md', 'lg', 'xl']
   sizes.map( (size)=>{
      if (others[size]) {
@@ -13,7 +15,7 @@ let  Col = ({ span, offset, children, prefix = 'flcn-grid-col', order, ...others
         } else if (typeof others[size] === 'object') {
           sizeParams = others[size] || {};
         }
-        delete others[size]; // To prevent a "Warning: Unknown props.."
+        delete others[size];
         typeof sizeParams.span !== 'undefined' ? classes += `${prefix}-${size}-${sizeParams.span} ` : null
         sizeParams.offset || sizeParams.offset === 0 ? classes += `${prefix}-${size}-offset-${sizeParams.offset} ` : null
         sizeParams.order || sizeParams.order === 0? classes += `${prefix}-${size}-order-${sizeParams.order}` : null
