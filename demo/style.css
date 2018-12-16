@@ -1,0 +1,15 @@
+#demo{
+    background-color:#d3d3d3;
+    padding:10px;
+}
+
+#demo .flcn-col{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    font-size: 1.5em
+}
+
+ #demo .flcn-col:nth-child(even) {background: #068587 }
+ #demo .flcn-col:nth-child(odd) { background: #4FB99F}

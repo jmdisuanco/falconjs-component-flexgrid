@@ -2,8 +2,7 @@ import {h} from '@falconjs.io/falcon'
 import s from './style/index.scss';
 
 let  Col = ({ span, offset, children, prefix = 'flcn-grid-col', order, ...others }) => {  
-  console.log('span',span)
-  let classes=''
+  let classes='flcn-col '
   others['class'] ? classes = others['class']+' ' : null
   let sizes = ['xs', 'sm', 'md', 'lg', 'xl']
   sizes.map( (size)=>{
