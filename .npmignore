@@ -1,7 +1,8 @@
 .cache
-*.tgz
 package-lock.json
 yarn.lock
 yarn.error
 dist
 node_modules
+demo
+*.tgz

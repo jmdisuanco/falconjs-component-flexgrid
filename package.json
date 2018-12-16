@@ -1,11 +1,11 @@
 {
   "name": "falconjs.io-component-flexgrid",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Flex Grid Layout Component FalconJS.io Framework",
-  "main": "./src/index.html",
+  "main": "./src/flexgrid/index.js",
   "scripts": {
-    "start": "parcel ./src/index.html --port=8000 --open",
-    "build": "parcel ./src/index.html",
+    "start": "parcel ./demo/index.html --port=8000 --open",
+    "build": "parcel ./src/flexgrid/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
