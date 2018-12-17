@@ -12,83 +12,152 @@ inside your FalconJS App directory
 ### Usage
 
 #### Baseline
-In Rows use the gutter property for spacing
+In Rows use the gutter property for spacing.
 In Columns use the span property to define the span of the column on the 12 grid
 
 ```
-    <Row gutter={20}>
-        <Col span={4}> Column Span 4</Col>
-        <Col span={4}> Column Span 4</Col>
-        <Col span={4}> Column Span 4</Col>
+    <Row gutter={40} >
+          <Col span={4}><div>1</div></Col>
+          <Col span={4}><div>2</div></Col>
+          <Col span={4}><div>3</div></Col>
     </Row>
 ```
+<img src="./screenshots/basic.png">
+
 
 #### Offset
 
 Offset the position of the column to the right.
 
 ```
-    <Row gutter={20}>
-        <Col span={4} offset={4}> Column Span 4</Col>
-        <Col span={4}> Column Span 4</Col>
-    </Row>
+   <Row gutter={20}>
+          <Col span={4} offset={4}> <div>Span 4 | Offset 4</div></Col>
+          <Col span={4}><div>Span 4</div></Col>
+   </Row>
 ```
+<img src="./screenshots/offset.png">
 
 
  #### Order
+ Sort the columns within ```<Row>```
 
 ```
     <Row gutter={20}>
-        <Col span={4} order={3}> Column Span 3</Col>
-        <Col span={4} order={2}> Column Span 2</Col>
-        <Col span={4} order={1}> Column Span 1</Col>
+        <Col span={4} order={3}><div>C</div></Col>
+        <Col span={4} order={2}><div>B</div></Col>
+        <Col span={4} order={1}><div>A</div></Col>
     </Row>
 ```
-#### Aling and Distribute
+<img src="./screenshots/order.png">
+
+
+#### Align and Distribute
 ```justify``` to distribute the columns inside the row 
     options:  ```start```, ```center```, ```end```, ```space-between```, and ```space-around```
     code snippet ```<Row justify="center">```
     
 
-``` align``` to vertical align the columnds inside the row 
+``` vertical``` to vertical align the columnds inside the row 
 options: ```top```, ```middle```, ```bottom```
-code snippet ```<Row align="top">```
+code snippet ```<Row vertical="top">```
 
 
 Flexbox parameters can be passed to Row to align and distribute the columns inside it.
 
-```
-    <Row gutter={20} justify="center" align="bottom">
-        <Col span={4} order={3}> <div class="tall">Tall</div></Col>
-        <Col span={4} order={2}> <div class="medium">Medium</div> </Col>
-        <Col span={4} order={1}> <div class="short">Short</div></Col>
-    </Row>
-```
-```
-    <Row gutter={20} justify="center" align="middle">
-        <Col span={4} order={3}> <div class="tall">Tall</div></Col>
-        <Col span={4} order={2}> <div class="medium">Medium</div> </Col>
-        <Col span={4} order={1}> <div class="short">Short</div></Col>
-    </Row>
-```
+##### Vertical alignment
 
 ```
-    <Row gutter={20} justify="center" align="top">
-        <Col span={4} order={3}> <div class="tall">Tall</div></Col>
-        <Col span={4} order={2}> <div class="medium">Medium</div> </Col>
-        <Col span={4} order={1}> <div class="short">Short</div></Col>
-    </Row>
+        <Row gutter={20} justify="center" vertical="bottom">
+          <Col span={4} > <div class="tall">Tall</div></Col>
+          <Col span={4} > <div class="medium">Medium</div> </Col>
+          <Col span={4} > <div class="short">Short</div></Col>
+        </Row>
 ```
+<img src="./screenshots/vertical-bottom.png">
+
+
+```
+        <Row gutter={20} justify="center" vertical="middle">
+          <Col span={4} > <div class="tall">Tall</div></Col>
+          <Col span={4} > <div class="medium">Medium</div> </Col>
+          <Col span={4} > <div class="short">Short</div></Col>
+        </Row> 
+```
+<img src="./screenshots/vertical-middle.png">
+
+
+```
+        <Row gutter={20} justify="center" vertical="top">
+          <Col span={4} > <div class="tall">Tall</div></Col>
+          <Col span={4} > <div class="medium">Medium</div> </Col>
+          <Col span={4} > <div class="short">Short</div></Col>
+        </Row>   
+```
+<img src="./screenshots/vertical-top.png">
+
+
+##### Distribute (Justify)
+
+```
+        <Row gutter={20} justify="start">
+          <Col span={3} > <div class="tall">Tall</div></Col>
+          <Col span={3} > <div class="medium">Medium</div> </Col>
+          <Col span={3} > <div class="short">Short</div></Col>
+        </Row>
+```
+<img src="./screenshots/justify-start.png">
+
+```
+        <Row gutter={20} justify="center">
+          <Col span={3} > <div class="tall">Tall</div></Col>
+          <Col span={3} > <div class="medium">Medium</div> </Col>
+          <Col span={3} > <div class="short">Short</div></Col>
+        </Row>
+```
+<img src="./screenshots/justify-center.png">
+
+```
+        <Row gutter={20} justify="end">
+          <Col span={3} > <div class="tall">Tall</div></Col>
+          <Col span={3} > <div class="medium">Medium</div> </Col>
+          <Col span={3} > <div class="short">Short</div></Col>
+        </Row>
+```
+<img src="./screenshots/justify-end.png">
+
+
+```
+        <Row gutter={20} justify="space-between">
+          <Col span={3} > <div class="tall">Tall</div></Col>
+          <Col span={3} > <div class="medium">Medium</div> </Col>
+          <Col span={3} > <div class="short">Short</div></Col>
+        </Row>
+```
+<img src="./screenshots/justify-space-between.png">
+
+```
+        <Row gutter={20} justify="space-around">
+          <Col span={3} > <div class="tall">Tall</div></Col>
+          <Col span={3} > <div class="medium">Medium</div> </Col>
+          <Col span={3} > <div class="short">Short</div></Col>
+        </Row>
+```
+<img src="./screenshots/justify-space-around.png">
+
+
 
 #### Responsive
 dimension ```xs```, ```sm```, ```md```, ```lg```. ```lg```
 
 ```
-<Row gutter={20} justify="center" align="top">
-    <Col xs={4} sm={8}  md={4} lg={6} xl={6}> xs 4</Col>
-    <Col xs={8} sm={4} md ={8} lg={6} xl={6}> xs 8</Col>
-</Row>
+        <Row gutter={20} justify="center" vertical="top">
+          <Col xs={12} sm={12}  md={4} lg={6} xl={6}><div> xs-12 sm-12 md-4 lg-6 xl-6</div></Col>
+          <Col xs={12} sm={12} md ={8} lg={6} xl={6}><div> sm-12 sm-12 md-8 lg-6 xl-6</div></Col>
+        </Row>
 ```
+<img src="./screenshots/xs-12.png">
+<img src="./screenshots/md-4-8.png">
+<img src="./screenshots/lg-6.png">
 
 *note: span and offset can be defined as a property of the query like so ```md={{ span:4, offset: 4}} ```
 
@@ -99,7 +168,7 @@ dimension ```xs```, ```sm```, ```md```, ```lg```. ```lg```
 
 |Property|Description|Type|Default|Options|
 |---|---|---|---|---|
-|align|Vertical alignment of the Columns inside the Row|String|```start```| ```start```, ```middle```, ```botoom```|
+|vertical|Vertical alignment of the Columns inside the Row|String|```start```| ```start```, ```middle```, ```botoom```|
 |gutter|Spacing between columns | Number| 0 | 0 to ...|
 |justify|Horizontal distributionon the columns |  String | ```start```| ```start```,```end```,```center```, ```space-around```, ```space-between```|
 
@@ -120,10 +189,11 @@ dimension ```xs```, ```sm```, ```md```, ```lg```. ```lg```
 |xl| ≥1600px, could be a span value or a object contain above props | Number or Object | | media query|
 
 ### Testing
+Prerequesite on testing install ```parcel``` to install ```npm i -g parcel-bundler```
 - Clone this repo ```git clone https://github.com/jmdisuanco/falconjs-component-flexgid```
 - ```cd falcon-js-component-flexgrid```
 - ```npm start ```
-- ```the demo will be served on  ```http://localhost:8000```
+- the demo will be served on  ```http://localhost:8000```
 
 ### Base on
 This is based on FalconJS flex grid component is based on Abraztsov's [ReactSimpleFlexGrid](https://github.com/abraztsov/ReactSimpleFlexGrid)
