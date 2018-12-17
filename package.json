@@ -14,7 +14,7 @@
   "author": "John Martin R. Disuanco",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmdisuanco/falcon-js-component-flexgrid"
+    "url": "https://github.com/jmdisuanco/falconjs-component-flexgrid"
   },
   "license": "MIT",
   "dependencies": {

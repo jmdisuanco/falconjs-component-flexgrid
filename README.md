@@ -1,4 +1,4 @@
-# <img src="https://github.com/falcon-js/falconjs-logos/raw/master/png/FALCONJS-LOGO-992FFF.png" width="25" > falconjs-component-flexgrid
+# <img src="https://github.com/falcon-js/falconjs-logos/raw/master/png/FALCONJS-LOGO-992FFF.png" width="25" > falcongit adjs-component-flexgrid
 
 12 Column Flex Grid Component for [FalconJS](https://github.com/falcon-js/falcon)  
 
@@ -48,7 +48,7 @@ Offset the position of the column to the right.
         <Col span={4} order={1}><div>A</div></Col>
     </Row>
 ```
-<img src="./screenshots/order.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/order.png">
 
 
 #### Align and Distribute
@@ -73,7 +73,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={4} > <div class="short">Short</div></Col>
         </Row>
 ```
-<img src="./screenshots/vertical-bottom.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/vertical-bottom.png">
 
 
 ```
@@ -83,7 +83,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={4} > <div class="short">Short</div></Col>
         </Row> 
 ```
-<img src="./screenshots/vertical-middle.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/vertical-middle.png">
 
 
 ```
@@ -93,7 +93,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={4} > <div class="short">Short</div></Col>
         </Row>   
 ```
-<img src="./screenshots/vertical-top.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/vertical-top.png">
 
 
 ##### Distribute (Justify)
@@ -105,7 +105,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={3} > <div class="short">Short</div></Col>
         </Row>
 ```
-<img src="./screenshots/justify-start.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/justify-start.png">
 
 ```
         <Row gutter={20} justify="center">
@@ -114,7 +114,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={3} > <div class="short">Short</div></Col>
         </Row>
 ```
-<img src="./screenshots/justify-center.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/justify-center.png">
 
 ```
         <Row gutter={20} justify="end">
@@ -123,7 +123,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={3} > <div class="short">Short</div></Col>
         </Row>
 ```
-<img src="./screenshots/justify-end.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/justify-end.png">
 
 
 ```
@@ -133,7 +133,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={3} > <div class="short">Short</div></Col>
         </Row>
 ```
-<img src="./screenshots/justify-space-between.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/justify-space-between.png">
 
 ```
         <Row gutter={20} justify="space-around">
@@ -142,7 +142,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
           <Col span={3} > <div class="short">Short</div></Col>
         </Row>
 ```
-<img src="./screenshots/justify-space-around.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/justify-space-around.png">
 
 
 
@@ -155,9 +155,9 @@ dimension ```xs```, ```sm```, ```md```, ```lg```. ```lg```
           <Col xs={12} sm={12} md ={8} lg={6} xl={6}><div> sm-12 sm-12 md-8 lg-6 xl-6</div></Col>
         </Row>
 ```
-<img src="./screenshots/xs-12.png">
-<img src="./screenshots/md-4-8.png">
-<img src="./screenshots/lg-6.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/xs-12.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/md-4-8.png">
+<img src="https://github.com/jmdisuanco/falconjs-component-flexgrid/raw/master/screenshots/lg-6.png">
 
 *note: span and offset can be defined as a property of the query like so ```md={{ span:4, offset: 4}} ```
 
