@@ -1,6 +1,6 @@
 {
   "name": "falconjs-component-flexgrid",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Flex Grid Layout Component FalconJS.io Framework",
   "main": "./build/index.js",
   "scripts": {
