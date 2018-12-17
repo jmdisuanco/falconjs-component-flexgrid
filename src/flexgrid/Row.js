@@ -1,6 +1,4 @@
 import {h} from '@falconjs.io/falcon'
-import s from './style/index.scss'
-
 let Row = ({ justify='start', vertical='top', className, gutter = 0 , style, children,prefix = 'flcn-grid-row', ...others }) => {
 let classes = 'flcn-row '
  classes += `${prefix} ` 

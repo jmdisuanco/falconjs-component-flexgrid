@@ -1,5 +1,5 @@
 import {h} from '@falconjs.io/falcon'
-import s from './style/index.scss';
+
 
 let  Col = ({ span, offset, children, prefix = 'flcn-grid-col', order, ...others }) => {  
   let classes='flcn-col '

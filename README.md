@@ -188,6 +188,9 @@ dimension ```xs```, ```sm```, ```md```, ```lg```. ```lg```
 |lg| ≥1200px, could be a span value or a object contain above props | Number or Object | | media query|
 |xl| ≥1600px, could be a span value or a object contain above props | Number or Object | | media query|
 
+### Contributions and request are welcome!
+Please Fork and submit PR
+
 ### Testing
 Prerequesite on testing install ```parcel``` to install ```npm i -g parcel-bundler```
 - Clone this repo ```git clone https://github.com/jmdisuanco/falconjs-component-flexgid```
