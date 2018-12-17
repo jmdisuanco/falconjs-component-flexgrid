@@ -1,4 +1,4 @@
-# <img src="https://github.com/falcon-js/falconjs-logos/raw/master/png/FALCONJS-LOGO-992FFF.png" width="25" > falcon-js-component-flexgrid
+# <img src="https://github.com/falcon-js/falconjs-logos/raw/master/png/FALCONJS-LOGO-992FFF.png" width="25" > falconjs-component-flexgrid
 
 12 Column Flex Grid Component for [FalconJS](https://github.com/falcon-js/falcon)  
 
