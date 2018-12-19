@@ -7,7 +7,13 @@ inside your FalconJS App directory
 
 - Install the package ```npm install --save  falconjs-component-flexgrid```  or ```yard add falcon-js-component-flexgrid```
 
-- Import inside your App ``` import {Row, Col} from 'falconjs-component-flexgrid'```
+- Import inside your App 
+
+```  
+    import {Row, Col} from 'falconjs-component-flexgrid'
+    import 'falconjs-component-flexgrid/dist/index.css'
+```
+
 
 ### Usage
 
