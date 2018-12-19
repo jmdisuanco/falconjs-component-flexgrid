@@ -2,10 +2,9 @@
 package-lock.json
 yarn.lock
 yarn.error
-dist
 node_modules
 demo
+testbuild
 *.tgz
 screenshots
-src
 .babelrc

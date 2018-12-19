@@ -147,7 +147,7 @@ Flexbox parameters can be passed to Row to align and distribute the columns insi
 
 
 #### Responsive
-dimension ```xs```, ```sm```, ```md```, ```lg```. ```lg```
+dimension ```xs```, ```sm```, ```md```, ```lg```, ```xl```
 
 ```
         <Row gutter={20} justify="center" vertical="top">
